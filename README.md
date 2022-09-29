@@ -13,13 +13,16 @@
 Clonar el respositorio ejecute.
 
 ```sh
-> git clone https://github.com/marco121942/reto-backend.git
+ git clone https://github.com/marco121942/reto-backend.git
+```
+```sh
+ git clone https://github.com/marco121942/reto-backend.git
 ```
 
 Instalar dependencias composer.
 
 ```sh
-> composer install
+ composer install
 ```
 
 ### Variables de entorno
@@ -27,7 +30,7 @@ Instalar dependencias composer.
 Modifique los valores por defecto de `.env`, para la correcta ejecución del proyecto, los principales valores que tiene que modificar son la base de datos y el proveedor de correos.
 
 ```sh
-> cp .env.example .env
+ cp .env.example .env
 ```
 ```json
 DB_CONNECTION=mysql
@@ -52,16 +55,16 @@ MAIL_FROM_NAME="${APP_NAME}"
 Ejecute el siguiente comando para la creación de la base de datos.
 
 ```sh
-> php artisan migrate
+ php artisan migrate
 ```
 ```sh
-> php artisan db:seed
+ php artisan db:seed
 ```
 
 #### Ejecutar proyecto
 
 ```sh
-> php artisan serve 
+ php artisan serve 
 ```
 ### Servicios realizados
 
@@ -104,5 +107,5 @@ Al momento de utilizar el servicio de filtrado de notas , si la nota contiene un
 
 ### Servicio para ver la imagen - "GET"
 ```sh
-> {{APP_URL_DEV}}/images/upload/yfHtd6SYK5t5dbguzeyh.jpg
+ {{APP_URL_DEV}}/images/upload/yfHtd6SYK5t5dbguzeyh.jpg
 ```
