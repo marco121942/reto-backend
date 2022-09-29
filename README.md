@@ -65,12 +65,44 @@ Ejecute el siguiente comando para la creación de la base de datos.
 ```
 ### Servicios realizados
 
-* {{APP_URL_DEV}}/api/auth/register - "registro de usuario"
-* {{APP_URL_DEV}}/api/auth/login - "inicio de sesión"
-* {{APP_URL_DEV}}/api/group - "listado de grupos"
-* {{APP_URL_DEV}}/api/group/addUser - "unirse a un grupo"
-* {{APP_URL_DEV}}/api/note - "publicar una nota y envia un correo alos miembros del grupo"
-* {{APP_URL_DEV}}/api/auth/perfil - "perfil del usuario donde se muestra los grupos al cual pertenece"
-* {{APP_URL_DEV}}/api/note/filter?has_image=1&date_final=2022-09-27&date_initial=2022-09-27 - "filtrado de notas por rango de flechas y si contiene alguna imagen"
+* 'POST' {{APP_URL_DEV}}/api/auth/register - "registro de usuario"
+* 'POST' {{APP_URL_DEV}}/api/auth/login - "inicio de sesión"
+* 'GET' {{APP_URL_DEV}}/api/group - "listado de grupos"
+* 'POST' {{APP_URL_DEV}}/api/group/addUser - "unirse a un grupo"
+* 'POST' {{APP_URL_DEV}}/api/note - "publicar una nota y envia un correo alos miembros del grupo"
+* 'POST' {{APP_URL_DEV}}/api/auth/perfil - "perfil del usuario donde se muestra los grupos al cual pertenece"
+* 'GET'{{APP_URL_DEV}}/api/note/filter?has_image=1&date_final=2022-09-27&date_initial=2022-09-27 - "filtrado de notas por rango de flechas y si contiene alguna imagen"
 
+### Ver una imagen de un grupo
 
+Al momento de utilizar el servicio de filtrado de notas , si la nota contiene una imagen se le mostrara una ruta la cual debe copiar y pegar y realziar un get de la imgen , EJM:
+
+```sh
+> {
+    "success": true,
+    "message": "Resultados del filtrado",
+    "data": [
+        {
+            "id": 67,
+            "user_id": 1,
+            "group_id": 2,
+            "title": "titulo",
+            "description": "descipcion",
+            "created_at": "2022-09-27T04:56:35.000000Z",
+            "updated_at": "2022-09-29T04:56:35.000000Z",
+            "images": [
+                {
+                    "id": 62,
+                    "note_id": 67,
+                    "url": "images/upload/yfHtd6SYK5t5dbguzeyh.jpg"
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Servicio para ver la imagen - "GET"
+```sh
+> {{APP_URL_DEV}}/images/upload/yfHtd6SYK5t5dbguzeyh.jpg
+```
