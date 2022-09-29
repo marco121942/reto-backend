@@ -13,7 +13,7 @@
 Clonar el respositorio ejecute.
 
 ```sh
-> git clone https://gitlab.com/techie-lab/cunsac](https://github.com/marco121942/reto-backend.git
+> git clone https://github.com/marco121942/reto-backend.git
 ```
 
 Instalar dependencias composer.
@@ -22,6 +22,30 @@ Instalar dependencias composer.
 > composer install
 ```
 
+### Variables de entorno
+
+Modifique los valores por defecto de `.env`, para la correcta ejecución del proyecto, los principales valores que tiene que modificar son la base de datos y el proveedor de correos.
+
+```sh
+> cp .env.example .env
+```
+```json
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailhog
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS=null
+MAIL_FROM_NAME="${APP_NAME}"
+```
 
 ### Servicios realziados
 
