@@ -16,7 +16,7 @@ Clonar el respositorio ejecute.
  git clone https://github.com/marco121942/reto-backend.git
 ```
 ```sh
- git clone https://github.com/marco121942/reto-backend.git
+  cd reto-backend
 ```
 
 Instalar dependencias composer.
