@@ -75,7 +75,7 @@ Ejecute el siguiente comando para la creación de la base de datos.
 
 ### Ver una imagen de un grupo
 
-Al momento de utilizar el servicio de filtrado de notas , si la nota contiene una imagen se le mostrara una ruta la cual debe copiar y pegar y realziar un get de la imgen , EJM:
+Al momento de utilizar el servicio de filtrado de notas , si la nota contiene una imagen se le mostrara una ruta la cual debe copiar y pegar y realizar un get de a la ruta de la imagen , EJM:
 
 ```sh
 > {
