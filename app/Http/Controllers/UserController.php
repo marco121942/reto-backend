@@ -62,6 +62,7 @@ class UserController extends Controller
             response()->json([
                 'success' => true,
                 'message' => 'Bienvenido, Acabas de iniciar sesión.',
+             'data' => $dataUser
             ], 200);
     }
 
