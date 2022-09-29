@@ -3,7 +3,10 @@
 
 ## Reto Backend - Marco Antonio Sotomayor Lopez
 
+### Requisitos
 
+* Laravel 8
+* Mysql
 
 
 ### Servicios realziados
