@@ -8,6 +8,20 @@
 * Laravel 8
 * Mysql
 
+### Instalación
+
+Clonar el respositorio ejecute.
+
+```sh
+> git clone https://gitlab.com/techie-lab/cunsac](https://github.com/marco121942/reto-backend.git
+```
+
+Instalar dependencias composer.
+
+```sh
+> composer install
+```
+
 
 ### Servicios realziados
 
