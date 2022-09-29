@@ -110,4 +110,6 @@ Al momento de utilizar el servicio de filtrado de notas , si la nota contiene un
  {{APP_URL_DEV}}/images/upload/yfHtd6SYK5t5dbguzeyh.jpg
 ```
 
-https://user-images.githubusercontent.com/42647311/192960045-ff4bd438-1712-4e60-96f2-9a89107d4ba0.PNG
+### Envio de una notificación al correo, de una nueva Nota
+
+![notification-note-email](https://user-images.githubusercontent.com/42647311/192960045-ff4bd438-1712-4e60-96f2-9a89107d4ba0.PNG)
