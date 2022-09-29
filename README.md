@@ -47,20 +47,30 @@ MAIL_FROM_ADDRESS=null
 MAIL_FROM_NAME="${APP_NAME}"
 ```
 
-### Servicios realziados
+### Base de datos
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Ejecute el siguiente comando para la creación de la base de datos.
+
+```sh
+> php artisan migrate
+```
+```sh
+> php artisan db:seed
+```
+
+#### Ejecutar proyecto
+
+```sh
+> php artisan serve 
+```
+### Servicios realizados
+
+* {{APP_URL_DEV}}/api/auth/register - "registro de usuario"
+* {{APP_URL_DEV}}/api/auth/login - "inicio de sesión"
+* {{APP_URL_DEV}}/api/group - "listado de grupos"
+* {{APP_URL_DEV}}/api/group/addUser - "unirse a un grupo"
+* {{APP_URL_DEV}}/api/note - "publicar una nota y envia un correo alos miembros del grupo"
+* {{APP_URL_DEV}}/api/auth/perfil - "perfil del usuario donde se muestra los grupos al cual pertenece"
+* {{APP_URL_DEV}}/api/note/filter?has_image=1&date_final=2022-09-27&date_initial=2022-09-27 - "filtrado de notas por rango de flechas y si contiene alguna imagen"
 
 
